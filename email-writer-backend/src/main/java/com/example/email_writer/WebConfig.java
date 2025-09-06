@@ -12,7 +12,10 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://mail.google.com", "https://your-frontend.vercel.app") 
+                        .allowedOrigins(
+                            "https://mail.google.com",
+                            "https://your-frontend.vercel.app"
+                        )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
