@@ -14,7 +14,7 @@ public class WebConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                             "https://mail.google.com",
-                            "https://your-frontend.vercel.app"
+                            "https://email-assistant-using-ai-1.onrender.com"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
