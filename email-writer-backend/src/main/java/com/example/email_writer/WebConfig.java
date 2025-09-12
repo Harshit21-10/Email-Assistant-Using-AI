@@ -14,7 +14,6 @@ public class WebConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                             "https://mail.google.com",
-                            "*://mail.google.com/*",
                             "https://email-assistant-using-ai-1.onrender.com"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
