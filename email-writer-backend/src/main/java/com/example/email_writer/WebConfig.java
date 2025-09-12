@@ -12,9 +12,10 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins(
+                        .allowedOriginPatterns(
                             "https://mail.google.com",
-                            "https://email-assistant-using-ai-1.onrender.com"
+                            "https://email-assistant-using-ai-1.onrender.com",
+                            "chrome://extensions/?id=hkmpjbjocmndkdcmoanekdohgekhmlak"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
