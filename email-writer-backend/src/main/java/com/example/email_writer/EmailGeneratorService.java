@@ -13,10 +13,9 @@ import java.util.Objects;
 public class EmailGeneratorService {
 
     private final WebClient webClient;
-    @Value("${gemini.api.url}")
-    private String geminiApiUrl;
-    @Value("${gemini.api.key}")
-    private String geminiApiKey;
+    
+    private String geminiApiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=";
+    private String geminiApiKey = "AIzaSyDo5d_9XqQo3EypaJNfrwuH45S_pPcatV8";
 
     public EmailGeneratorService(WebClient.Builder webClientBuilder) {
         this.webClient = webClientBuilder.build();
