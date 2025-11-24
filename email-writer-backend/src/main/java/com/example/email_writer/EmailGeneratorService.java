@@ -15,7 +15,7 @@ public class EmailGeneratorService {
     private final WebClient webClient;
     
     private String geminiApiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=";
-    private String geminiApiKey = "AIzaSyDo5d_9XqQo3EypaJNfrwuH45S_pPcatV8";
+    private String geminiApiKey = "";
 
     public EmailGeneratorService(WebClient.Builder webClientBuilder) {
         this.webClient = webClientBuilder.build();
